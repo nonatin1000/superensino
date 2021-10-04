@@ -68,13 +68,3 @@ class AnswerSerializer(ModelSerializer):
     class Meta:
         model = Answer
         fields = '__all__'
-
-"""
-    AnswerSerializer
-        -> idOption
-        Method:
-            authenticated user
-            Acoording of idOption to get quiz
-            to get object mark of user
-            to create Answer (mark of user, idOption)
-"""
