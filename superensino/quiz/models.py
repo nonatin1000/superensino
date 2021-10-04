@@ -72,6 +72,7 @@ class MarksOfUser(models.Model):
 
 class Answer(models.Model):
     marks_of_user = models.ForeignKey(MarksOfUser, related_name='answers', on_delete=models.CASCADE)
+
     option = models.ForeignKey(Option, related_name='answers', on_delete=models.CASCADE)
 
     class Meta:
